@@ -61,3 +61,66 @@ The outcome of this project was a comprehensive product plan and an iterated, us
 * **User-Centricity is Non-Negotiable:** Prioritizing direct user feedback during the discovery phase is the most effective way to ensure you are building a product that has a strong market fit.
 * **Iteration Drives Quality:** The initial idea is never perfect. A willingness to iterate on the product strategy and design based on new information is critical for success.
 * **Shared Ownership Creates Better Products:** Product management is a team sport. Fostering an environment of shared responsibility and leveraging group consensus leads to more robust and well-considered decisions.
+
+---
+
+## App Navigation & User Flow Guide
+
+This section outlines the implemented user journey within the AeroLink application, highlighting the key interactions available in the MVP.
+
+### 1. Welcome & Onboarding
+*   **Screen**: Welcome Screen
+*   **Action**: Tap "Get Started" to launch the main dashboard.
+*   **Key Features**: Brand introduction with a seamless entry animation.
+
+![Welcome Screen Placeholder](./artifacts/app_screenshots/welcome.png)
+
+### 2. Home Dashboard
+*   **Screen**: Home
+*   **Action**: View your comprehensive travel summary.
+*   **Navigation**: Use the bottom bar to switch between major sections: Home, Search (Explore), Trips, and Profile.
+*   **Key Features**: "Next Trip" card with countdown, quick access service icons, and travel tips.
+
+![Home Screen Placeholder](./artifacts/app_screenshots/home.png)
+
+### 3. Flight Search
+*   **Screen**: Find Your Next Flight
+*   **Action**: Select the "Explore" (Compass) icon in the bottom navigation. Enter your destination and travel dates in the input fields, then tap the "Search Flights" button.
+*   **Key Features**: Toggle between One-way/Round-trip, view and select from recent searches.
+
+![Search Screen Placeholder](./artifacts/app_screenshots/search.png)
+
+### 4. Flight Results
+*   **Screen**: Flight Results
+*   **Action**: Browse the list of available flights. Use the filter chips (Cheapest, Fastest) at the top to refine your view. Tap on a flight card to see more details.
+*   **Key Features**: Visual price comparison, clear airline branding, and flight duration summaries.
+
+![Results Screen Placeholder](./artifacts/app_screenshots/results.png)
+
+### 5. Flight Details
+*   **Screen**: Flight Details
+*   **Action**: Review the complete flight timeline, aircraft specifications, and amenities. Tap "Select Flight" at the bottom to proceed to booking.
+*   **Key Features**: Visual journey timeline, seat map preview, and baggage allowance options.
+
+![Details Screen Placeholder](./artifacts/app_screenshots/details.png)
+
+### 6. Secure Checkout
+*   **Screen**: Checkout
+*   **Action**: Review the booking summary and traveler details. Select your preferred payment method (Apple Pay/Credit Card) and tap "Confirm & Pay".
+*   **Key Features**: Secure payment method selection and detailed price breakdown.
+
+![Checkout Screen Placeholder](./artifacts/app_screenshots/checkout.png)
+
+### 7. Digital Boarding Pass
+*   **Screen**: Boarding Pass
+*   **Action**: View your final boarding pass.
+*   **Key Features**: QR code for scanning, gate information, and an "Add to Wallet" button for convenience.
+
+![Boarding Pass Placeholder](./artifacts/app_screenshots/boarding_pass.png)
+
+### 8. Additional Features
+*   **Profile & Loyalty**: Tap the "Profile" icon in the navigation bar to view loyalty status, miles, and manage app settings.
+*   **Smart Alerts**: Tap the bell icon in the top right of the Home screen to access real-time flight notifications and status updates.
+
+![Profile Screen Placeholder](./artifacts/app_screenshots/profile.png)
+![Smart Alerts Placeholder](./artifacts/app_screenshots/alerts.png)

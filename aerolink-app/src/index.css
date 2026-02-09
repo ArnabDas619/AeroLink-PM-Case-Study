@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Boarding Pass */
+.pass-perforation {
+    background-image: radial-gradient(circle, transparent 0, transparent 8px, #ffffff 8px);
+    background-size: 24px 100%;
+    background-position: -12px;
+}
+
+.dashed-line {
+    background-image: linear-gradient(to right, #e2e8f0 50%, transparent 50%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
+
+/* Profile Toggle */
+.toggle-checkbox:checked {
+    right: 0.25rem;
+    left: auto;
+    border-color: #135bec;
+    background-color: #fff;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #135bec;
+}
+
+.toggle-checkbox {
+    top: 0.25rem;
+    left: 0.25rem;
+    transition: all 0.2s;
+}
+
+/* Smart Alerts Timeline */
+.timeline-line {
+    position: absolute;
+    left: 2.25rem;
+    top: 2rem;
+    bottom: -2rem;
+    width: 2px;
+    background: linear-gradient(to bottom, #135bec 0%, #135bec33 100%);
+    z-index: 0;
+}
+
+.last-item .timeline-line {
+    display: none;
+}
