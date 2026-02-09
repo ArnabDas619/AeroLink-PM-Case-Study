@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome to AeroLink</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .ios-status-bar {
+            height: 44px;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(16, 22, 34, 0) 0%, rgba(16, 22, 34, 0.8) 70%, rgba(16, 22, 34, 1) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased overflow-hidden">
+<!-- Main Mobile Container -->
+<div class="relative flex h-screen w-full max-w-[430px] mx-auto flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+<!-- Status Bar Spacer (iOS Style) -->
+<div class="ios-status-bar w-full flex justify-between items-center px-8 shrink-0">
+<span class="text-xs font-bold">9:41</span>
+<div class="flex gap-1 items-center">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span class="material-symbols-outlined text-[16px]">battery_full</span>
+</div>
+</div>
+<!-- Hero Image Section -->
+<div class="relative flex-1 w-full flex flex-col">
+<!-- Image with Gradient Overlay -->
+<div class="absolute inset-0 w-full h-[65%] bg-center bg-no-repeat bg-cover" data-alt="A serene view of an airplane wing above soft white clouds at sunset" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAL6iu4dX6J2Vu9fM_Qhv3JsCiryDdXmrDNcG-fZxAz0b2SotYMPDKrnrYYO2-Yseuq0ShWhi-X5G73JhD5sC6OrGtSfEl6NGUnPOGLyFwjnSfxL1zKJVlReK8TzAbvwvCKU63rEUYmY0j1FWEonAAE9UACFNp61JOAwG9zLOqsbL2SVZvdh3OafirWY-BqNNL8OWAv2BGOmjYLpY8tFbk20UVCb2fcRbwVXBGwxdiy8Ar7mBVxVA3St9MvcxxHRlSzpNJ-wAKZqk");'>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<!-- Logo and Brand -->
+<div class="relative z-10 pt-12 flex flex-col items-center">
+<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/30 mb-4">
+<span class="material-symbols-outlined text-white text-3xl">flight_takeoff</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight text-white uppercase">AeroLink</h2>
+</div>
+<!-- Content Area -->
+<div class="relative z-10 mt-auto px-8 pb-10 flex flex-col items-center text-center">
+<h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white mb-4">
+                    Your Journey,<br/>Reimagined
+                </h1>
+<p class="text-slate-300 text-base font-normal leading-relaxed max-w-[280px]">
+                    Experience seamless flight booking and real-time travel management at your fingertips.
+                </p>
+<!-- Onboarding Dots -->
+<div class="flex gap-2 mt-8 mb-4">
+<div class="w-6 h-1.5 rounded-full bg-primary"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="relative z-10 px-6 pt-2 pb-12 flex flex-col gap-3">
+<button class="w-full h-14 bg-primary hover:bg-primary/90 text-white rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span>Get Started</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white/5 dark:bg-white/10 hover:bg-white/10 dark:hover:bg-white/20 text-slate-900 dark:text-white rounded-xl font-bold text-lg transition-all active:scale-[0.98] flex items-center justify-center">
+                Log In
+            </button>
+<p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium text-center mt-4 px-10 uppercase tracking-widest leading-loose">
+                By continuing, you agree to our <br/>
+<span class="text-primary cursor-pointer">Terms of Service</span> &amp; <span class="text-primary cursor-pointer">Privacy Policy</span>
+</p>
+</div>
+<!-- Home Indicator (iOS Style) -->
+<div class="w-full flex justify-center pb-2 shrink-0">
+<div class="w-32 h-1.5 bg-slate-300 dark:bg-slate-800 rounded-full"></div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-20 dark:opacity-40">
+<div class="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-[300px] h-[300px] bg-blue-400 rounded-full blur-[100px]"></div>
+</div>
+</body></html>

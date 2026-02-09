@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AeroLink - Flight Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden max-w-md mx-auto shadow-2xl">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center p-4 justify-between gap-2">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="flex-1 flex flex-col items-center">
+<h2 class="text-base font-bold leading-tight tracking-tight">NYC to LON</h2>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Oct 12 • 1 Passenger</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</button>
+</div>
+<!-- Filter Chips - Horizontal Scroll -->
+<div class="flex gap-2 px-4 pb-4 overflow-x-auto hide-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-4">
+<span class="text-xs font-semibold">Cheapest</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 px-4 border border-transparent hover:border-primary/50 transition-all">
+<span class="text-xs font-semibold">Fastest</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 px-4 border border-transparent hover:border-primary/50 transition-all">
+<span class="text-xs font-semibold">Non-stop</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 px-4 border border-transparent hover:border-primary/50 transition-all">
+<span class="text-xs font-semibold">Greener</span>
+</button>
+</div>
+</header>
+<main class="flex-1 p-4 space-y-4">
+<!-- Flight Result Card 1: Best Value -->
+<div class="relative overflow-hidden flex flex-col bg-white dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-primary/40 transition-all">
+<div class="p-4 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img class="w-8 h-8 object-contain" data-alt="Delta Airlines logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Sz0qJB2Nzyapp2TvLNkuEziMfGyTWD2-PrU4wJcsN1tdEy_z99r9ZvvaZAHKiq9ydVs8cJn5bQbpNO0kj1KJt0Ap9YmCF6JzqlCeAoH210qIVHb-UFGpm4UNOXb6PX3ptQ-kVMShdHgw8GgnBQ36PC8b7_epmHNBsAVOpYTDuNrZgcuGBl-t68MwfIx1x-SmF1xWS8dUwyfPByPC_79pR027IJ4WCEEKefyIO1HnO0MwyoKkz-TJ8MyftRL__W_gUbzwV-Jb60Y"/>
+</div>
+<div>
+<p class="text-sm font-bold">Delta Airlines</p>
+<span class="inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold text-primary tracking-wide uppercase">
+                                    Best Value
+                                </span>
+</div>
+</div>
+<p class="text-xl font-bold tracking-tight">$450</p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<p class="text-lg font-bold">08:30</p>
+<p class="text-xs text-slate-500 font-medium">JFK</p>
+</div>
+<div class="flex-1 px-4 flex flex-col items-center">
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Direct</p>
+<div class="relative w-full h-[2px] bg-slate-200 dark:bg-slate-700">
+<div class="absolute -top-1 left-0 size-2 rounded-full bg-primary"></div>
+<div class="absolute -top-1 right-0 size-2 rounded-full bg-slate-400"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-[#101622] px-1">
+<span class="material-symbols-outlined text-primary text-sm">flight</span>
+</div>
+</div>
+<p class="text-[11px] text-slate-500 font-medium mt-1">7h 45m</p>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-lg font-bold">16:15</p>
+<p class="text-xs text-slate-500 font-medium">LHR</p>
+</div>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-lg font-bold text-sm hover:brightness-110 active:scale-[0.98] transition-all">
+                            Select Flight
+                        </button>
+</div>
+</div>
+</div>
+<!-- Flight Result Card 2: Carbon Efficient -->
+<div class="relative overflow-hidden flex flex-col bg-white dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-primary/40 transition-all">
+<div class="p-4 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img class="w-8 h-8 object-contain" data-alt="British Airways logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGnJNLoMWNg3BjFqBp_fq280iLLCeyuVjKe16IF21B88K6UloA3IRvN4YLc6MNkv2ACOtbvv8RTEbPWO_9xduTQyG_nHbyd2ESMfQs9qizMuCFUxlCO_Cd1rbiVE8nDDmVG3ldTXBBf73erIwJAL6tUh32ehz1-YgrYQKtlCFCeAVRpLNJeOF0U6O3lf1eDbJzkNDm-i3oiek_fQUdpM8YrPc6FGjYi3SbhSZ-x5SL05lh1OGTx6-NvQUxoA8CyLZi-pwdpmbpQ3s"/>
+</div>
+<div>
+<p class="text-sm font-bold">British Airways</p>
+<span class="inline-flex items-center rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-bold text-emerald-500 tracking-wide uppercase">
+<span class="material-symbols-outlined text-xs mr-1">eco</span>
+                                    Carbon Efficient
+                                </span>
+</div>
+</div>
+<p class="text-xl font-bold tracking-tight">$520</p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<p class="text-lg font-bold">10:00</p>
+<p class="text-xs text-slate-500 font-medium">EWR</p>
+</div>
+<div class="flex-1 px-4 flex flex-col items-center">
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">1 Stop (MAD)</p>
+<div class="relative w-full h-[2px] bg-slate-200 dark:bg-slate-700">
+<div class="absolute -top-1 left-0 size-2 rounded-full bg-primary"></div>
+<div class="absolute -top-1 right-0 size-2 rounded-full bg-slate-400"></div>
+<div class="absolute -top-1 left-1/2 -translate-x-1/2 size-2 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-background-light dark:bg-slate-900"></div>
+<div class="absolute top-1/2 left-1/4 -translate-y-1/2 bg-white dark:bg-[#101622] px-1">
+<span class="material-symbols-outlined text-primary text-sm">flight</span>
+</div>
+</div>
+<p class="text-[11px] text-slate-500 font-medium mt-1">9h 45m</p>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-lg font-bold">19:45</p>
+<p class="text-xs text-slate-500 font-medium">LHR</p>
+</div>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-lg font-bold text-sm hover:brightness-110 active:scale-[0.98] transition-all">
+                            Select Flight
+                        </button>
+</div>
+</div>
+</div>
+<!-- Flight Result Card 3 -->
+<div class="relative overflow-hidden flex flex-col bg-white dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-primary/40 transition-all">
+<div class="p-4 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img class="w-8 h-8 object-contain" data-alt="United Airlines logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWrr-4Z3VEPUDLN0738aOYecth_lZlaejiFa8jJ3qtDUN6ayDZxPLOzls5tXz_0nsmA2ty4LxrNVp_hkiUSvYRXiYcq-Gca1OUUDukde20G2BPY1yzPYfQlcVdp9zr_XCB4zGSfQDK4mlw5HmE6uKfDuySsEm5dFFNmcI41GHiLHDdIW7MvnJUHm1Al7UEE4c78cad9R3CkUpo8wOb-yzLdgCUkivvBcGUUiXg_35NlDmJHZNGZrRyPYrrFdTBR9S23BGZXYONJlI"/>
+</div>
+<div>
+<p class="text-sm font-bold">United Airlines</p>
+</div>
+</div>
+<p class="text-xl font-bold tracking-tight">$390</p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<p class="text-lg font-bold">22:15</p>
+<p class="text-xs text-slate-500 font-medium">JFK</p>
+</div>
+<div class="flex-1 px-4 flex flex-col items-center">
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">1 Stop (ORD)</p>
+<div class="relative w-full h-[2px] bg-slate-200 dark:bg-slate-700">
+<div class="absolute -top-1 left-0 size-2 rounded-full bg-primary"></div>
+<div class="absolute -top-1 right-0 size-2 rounded-full bg-slate-400"></div>
+<div class="absolute top-1/2 left-2/3 -translate-y-1/2 bg-white dark:bg-[#101622] px-1">
+<span class="material-symbols-outlined text-primary text-sm">flight</span>
+</div>
+</div>
+<p class="text-[11px] text-slate-500 font-medium mt-1">12h 15m</p>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-lg font-bold">10:30<span class="text-[10px] text-primary align-top">+1</span></p>
+<p class="text-xs text-slate-500 font-medium">LHR</p>
+</div>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-lg font-bold text-sm hover:brightness-110 active:scale-[0.98] transition-all">
+                            Select Flight
+                        </button>
+</div>
+</div>
+</div>
+<!-- Padding for FAB -->
+<div class="h-20"></div>
+</main>
+<!-- Floating Action Button -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40">
+<button class="flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-primary rounded-full shadow-2xl text-white hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl">sort</span>
+<span class="text-sm font-bold">Sort &amp; Filter</span>
+</button>
+</div>
+<!-- iOS Bottom Indicator -->
+<div class="fixed bottom-0 left-0 w-full h-8 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent pointer-events-none"></div>
+</div>
+</body></html>

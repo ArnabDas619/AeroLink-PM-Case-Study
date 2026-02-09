@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile &amp; Loyalty - AeroLink</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen pb-24">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center">Profile &amp; Loyalty</h2>
+<div class="flex size-10 items-center justify-center">
+<button class="text-primary flex items-center justify-center rounded-full hover:bg-primary/10 transition-colors p-2">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</div>
+<main class="max-w-md mx-auto px-4 py-2 space-y-6">
+<!-- Profile Header -->
+<div class="flex flex-col items-center gap-4 py-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-28 w-28 border-4 border-primary/20" data-alt="Professional headshot of a smiling man in a suit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW21TZ2T0X2WDuJKdjeU5XEIuVCn61KZ0GEjBHPP0y0M489dUHCe7WdPPlmmrRwpiqUQW0nq0_9MnACOOQ-75I9LK9ohRhjgXUJOtKLnmKEGm7bWTX5oyxRugY2lX6EcoIpescn0MgW9fCaAkbEIJbahW20vLJelMIs-xWL-uum88lfHJZIhv07EJ_fRpjnhMOxp0w4PCw5bxoX0vDOSsL83zkZKdNP-6pai9MrTPv53bgwqNRdfw1wgPI8Ta_xcxZxN7y72ZMVDg");'>
+</div>
+<div class="absolute bottom-0 right-0 bg-primary text-white p-1 rounded-full border-2 border-background-dark">
+<span class="material-symbols-outlined text-sm block">verified</span>
+</div>
+</div>
+<div class="text-center">
+<h1 class="text-2xl font-bold tracking-tight">Alex Sterling</h1>
+<div class="flex items-center justify-center gap-1.5 mt-1">
+<span class="bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border border-primary/20">Gold Member</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">• Member since 2021</span>
+</div>
+</div>
+</div>
+<!-- Loyalty Progress Card -->
+<div class="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex justify-between items-end mb-4">
+<div class="space-y-1">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Next Tier: Platinum</p>
+<p class="text-2xl font-bold">12,500 <span class="text-sm font-normal text-slate-500">miles to go</span></p>
+</div>
+<div class="text-right">
+<p class="text-slate-400 dark:text-slate-500 text-xs uppercase font-bold tracking-widest">Progress</p>
+<p class="text-primary font-bold">75%</p>
+</div>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-3 rounded-full overflow-hidden mb-3">
+<div class="bg-primary h-full rounded-full" style="width: 75%;"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-slate-500">
+<span>37,500 Miles</span>
+<span>50,000 Miles</span>
+</div>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mb-1">Miles</p>
+<p class="text-lg font-bold">142k</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mb-1">Bookings</p>
+<p class="text-lg font-bold">12</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mb-1">Hours</p>
+<p class="text-lg font-bold">340h</p>
+</div>
+</div>
+<!-- Management Sections -->
+<div class="space-y-2">
+<h3 class="text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 px-1">Travel Management</h3>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 divide-y divide-slate-100 dark:divide-slate-800 overflow-hidden">
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">card_membership</span>
+</div>
+<div>
+<p class="font-semibold text-sm">Frequent Flyer Numbers</p>
+<p class="text-xs text-slate-500">3 Linked accounts</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">group</span>
+</div>
+<div>
+<p class="font-semibold text-sm">Saved Travelers</p>
+<p class="text-xs text-slate-500">4 Family &amp; friends</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<p class="font-semibold text-sm">Payment Methods</p>
+<p class="text-xs text-slate-500">Visa ending in 4242</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- App Settings -->
+<div class="space-y-2">
+<h3 class="text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 px-1">App Settings</h3>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 divide-y divide-slate-100 dark:divide-slate-800 overflow-hidden">
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<p class="font-semibold text-sm">Push Notifications</p>
+</div>
+<div class="relative inline-block w-10 h-6 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-4 appearance-none cursor-pointer top-1 left-1 checked:right-1 checked:left-auto border-primary bg-primary" id="toggle" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-slate-300 dark:bg-slate-700 cursor-pointer" for="toggle"></label>
+</div>
+</div>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">translate</span>
+</div>
+<p class="font-semibold text-sm">Language</p>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-sm text-slate-500">English</span>
+<span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+</div>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">help_center</span>
+</div>
+<p class="font-semibold text-sm">Support &amp; Feedback</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</a>
+</div>
+</div>
+<button class="w-full py-4 text-red-500 font-bold hover:bg-red-50 dark:hover:bg-red-500/10 rounded-xl transition-colors mt-4">
+            Log Out
+        </button>
+</main>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-6 py-3 z-50">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-bold">Search</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="text-[10px] font-bold">Bookings</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">person</span>
+<span class="text-[10px] font-bold">Profile</span>
+</a>
+</div>
+<!-- iOS Home Indicator -->
+<div class="w-32 h-1 bg-slate-300 dark:bg-slate-700 rounded-full mx-auto mt-4"></div>
+</nav>
+<style>
+        .toggle-checkbox:checked {
+            right: 0.25rem;
+            left: auto;
+            border-color: #135bec;
+            background-color: #fff;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #135bec;
+        }
+        .toggle-checkbox {
+            top: 0.25rem;
+            left: 0.25rem;
+            transition: all 0.2s;
+        }
+    </style>
+</body></html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AeroLink - Find Your Next Flight</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0B0E14",
+                        "field-dark": "#1A1D24",
+                        "border-dark": "#2A2E37",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Mobile Container -->
+<div class="relative flex h-screen w-full max-w-[480px] mx-auto flex-col overflow-hidden bg-background-light dark:bg-background-dark shadow-2xl">
+<!-- Status Bar Space (Mock) -->
+<div class="h-12 flex items-center justify-between px-6 shrink-0">
+<span class="text-xs font-bold">9:41</span>
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-sm">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-sm">wifi</span>
+<span class="material-symbols-outlined text-sm">battery_full</span>
+</div>
+</div>
+<!-- Header -->
+<header class="px-6 py-4 flex items-center gap-4">
+<button class="flex items-center justify-center size-10 rounded-full bg-white/10 dark:bg-white/5 border border-slate-200 dark:border-border-dark">
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight">Find Your Next Flight</h1>
+</header>
+<!-- Main Content Area Scrollable -->
+<main class="flex-1 overflow-y-auto px-6 pb-32">
+<!-- Trip Type Toggle -->
+<div class="mt-4 mb-8">
+<div class="flex h-12 w-full items-center justify-center rounded-xl bg-slate-200/50 dark:bg-field-dark p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-background-dark has-[:checked]:shadow-sm text-slate-500 dark:text-slate-400 has-[:checked]:text-primary dark:has-[:checked]:text-white text-sm font-semibold transition-all">
+<span class="truncate">One-way</span>
+<input class="hidden" name="trip-type" type="radio" value="one-way"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-background-dark has-[:checked]:shadow-sm text-slate-500 dark:text-slate-400 has-[:checked]:text-primary dark:has-[:checked]:text-white text-sm font-semibold transition-all">
+<span class="truncate">Round-trip</span>
+<input checked="" class="hidden" name="trip-type" type="radio" value="round-trip"/>
+</label>
+</div>
+</div>
+<!-- Route Inputs -->
+<div class="relative flex flex-col gap-3">
+<!-- From -->
+<div class="flex flex-col gap-1.5 p-4 rounded-2xl bg-white dark:bg-field-dark border border-slate-100 dark:border-border-dark group">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500">From</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div class="flex flex-col">
+<span class="text-lg font-bold">New York</span>
+<span class="text-xs text-slate-400">JFK, John F. Kennedy Int.</span>
+</div>
+</div>
+</div>
+<!-- Swap Button -->
+<div class="absolute right-6 top-1/2 -translate-y-1/2 z-10">
+<button class="flex size-10 items-center justify-center rounded-full bg-primary text-white shadow-lg border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-lg">swap_vert</span>
+</button>
+</div>
+<!-- To -->
+<div class="flex flex-col gap-1.5 p-4 rounded-2xl bg-white dark:bg-field-dark border border-slate-100 dark:border-border-dark">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500">To</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">flight_land</span>
+<div class="flex flex-col">
+<span class="text-lg font-bold">London</span>
+<span class="text-xs text-slate-400">LHR, Heathrow Airport</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Date and Passenger Grid -->
+<div class="grid grid-cols-2 gap-3 mt-4">
+<!-- Departure -->
+<div class="flex flex-col gap-1.5 p-4 rounded-2xl bg-white dark:bg-field-dark border border-slate-100 dark:border-border-dark">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500">Departure</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-lg">calendar_today</span>
+<span class="text-sm font-bold">Oct 24, 2023</span>
+</div>
+</div>
+<!-- Return -->
+<div class="flex flex-col gap-1.5 p-4 rounded-2xl bg-white dark:bg-field-dark border border-slate-100 dark:border-border-dark">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500">Return</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-lg">calendar_month</span>
+<span class="text-sm font-bold">Oct 30, 2023</span>
+</div>
+</div>
+</div>
+<!-- Passengers / Class -->
+<div class="mt-4 flex flex-col gap-1.5 p-4 rounded-2xl bg-white dark:bg-field-dark border border-slate-100 dark:border-border-dark">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500">Travelers &amp; Class</span>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">group</span>
+<div class="flex flex-col">
+<span class="text-sm font-bold">1 Adult, Economy</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+</div>
+</div>
+<!-- Recent Searches Section -->
+<div class="mt-8">
+<h3 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-4 px-1">Recent Searches</h3>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between p-3 rounded-xl bg-slate-100 dark:bg-white/5 border border-transparent dark:border-border-dark">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm">history</span>
+</div>
+<div>
+<p class="text-xs font-bold">NYC → LHR</p>
+<p class="text-[10px] text-slate-500">Oct 24 - Oct 30</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-xs text-slate-400">close</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-slate-100 dark:bg-white/5 border border-transparent dark:border-border-dark opacity-70">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm">history</span>
+</div>
+<div>
+<p class="text-xs font-bold">PAR → TYO</p>
+<p class="text-[10px] text-slate-500">Nov 12 - Nov 20</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-xs text-slate-400">close</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Bottom Search Button -->
+<div class="absolute bottom-0 left-0 right-0 p-6 pb-10 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light/95 dark:via-background-dark/95 to-transparent">
+<button class="w-full h-14 bg-primary text-white rounded-2xl font-bold flex items-center justify-center gap-2 shadow-xl shadow-primary/20 hover:bg-blue-700 transition-colors">
+<span class="material-symbols-outlined">search</span>
+                Search Flights
+            </button>
+</div>
+<!-- iOS Home Indicator Mock -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-slate-400/30 rounded-full"></div>
+</div>
+</body></html>
