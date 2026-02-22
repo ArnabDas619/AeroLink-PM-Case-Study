@@ -89,12 +89,12 @@ const Home = () => {
                         </div>
                         <p className="text-[11px] font-bold text-slate-600 dark:text-slate-400">Baggage</p>
                     </div>
-                    <div className="flex flex-col items-center gap-2">
+                    <Link to="/status" className="flex flex-col items-center gap-2">
                         <div className="size-12 rounded-xl bg-slate-100 dark:bg-[#232f48] flex items-center justify-center text-primary">
-                            <span className="material-symbols-outlined">restaurant</span>
+                            <span className="material-symbols-outlined">flight</span>
                         </div>
-                        <p className="text-[11px] font-bold text-slate-600 dark:text-slate-400">Dining</p>
-                    </div>
+                        <p className="text-[11px] font-bold text-slate-600 dark:text-slate-400">Status</p>
+                    </Link>
                     <div className="flex flex-col items-center gap-2">
                         <div className="size-12 rounded-xl bg-slate-100 dark:bg-[#232f48] flex items-center justify-center text-primary">
                             <span className="material-symbols-outlined">support_agent</span>

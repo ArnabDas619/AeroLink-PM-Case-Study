@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout';
 import BoardingPass from './pages/BoardingPass';
 import ProfileLoyalty from './pages/ProfileLoyalty';
 import SmartAlerts from './pages/SmartAlerts';
+import FlightStatus from './pages/FlightStatus';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/boarding-pass" element={<BoardingPass />} />
       <Route path="/profile" element={<ProfileLoyalty />} />
       <Route path="/alerts" element={<SmartAlerts />} />
+      <Route path="/status" element={<FlightStatus />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
